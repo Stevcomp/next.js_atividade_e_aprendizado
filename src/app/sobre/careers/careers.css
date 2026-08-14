@@ -1,0 +1,28 @@
+/* Selo indicando a vaga */
+.badge-vaga {
+  display: inline-block;
+  background: rgba(0, 210, 255, 0.15);
+  color: #00d2ff;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+/* Botão de candidatura */
+.btn-candidatar {
+  display: inline-block;
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.btn-candidatar:hover {
+  color: #00d2ff;
+}

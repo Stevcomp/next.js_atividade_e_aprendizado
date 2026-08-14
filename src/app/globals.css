@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap");
+
+/* Gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1062f2 0%, #0d3890 60%, #172b68 100%);
+  min-height: 100vh;
+  color: #ffffff;
+  padding-bottom: 40px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.logo-img {
+  max-height: 70px;
+  display: block;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.link-nav {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.setinha {
+  font-size: 10px;
+  margin-left: 3px;
+}
+
+.btn-header {
+  padding: 12px 28px;
+  font-size: 12px;
+  background-color: #ff5277;
+  color: #ffffff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-shadow: 0px 4px 15px rgba(255, 82, 119, 0.4);
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
+}
+
+.btn-header:hover {
+  background-color: #e04366;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin-top: 60px;
+  padding: 30px 80px;
+}
+
+.conteudo-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+}
+
+.conteudo-footer p {
+  text-transform: uppercase;
+}
+
+.footer-links {
+  display: flex;
+  gap: 35px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  transition: opacity 0.2s;
+}
+
+.footer-links a:hover {
+  opacity: 0.8;
+}
+
+/* Padrão de página interna (reutilizado por Blog, Podcast, What We Do e Careers) */
+.conteudo-pagina {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.titulo-pagina {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.subtitulo-pagina {
+  font-size: 18px;
+  color: #c4d9ff;
+  max-width: 700px;
+  line-height: 1.5;
+  margin-bottom: 45px;
+}
+
+/* Grid de cards (alinha os itens lado a lado e centraliza) */
+.conteudo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.card-item {
+  flex: 1 1 280px;
+  max-width: 340px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border-top: 4px solid #0052ff;
+}
+
+.card-item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.card-item p {
+  font-size: 14px;
+  color: #c4d9ff;
+  line-height: 1.5;
+}
+
+.card-item:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.08);
+}

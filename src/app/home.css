@@ -1,0 +1,109 @@
+/* Seção hero */
+.conteudo-hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.hero-linha {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.hero-texto {
+  flex: 1;
+}
+
+.hero-texto h1 {
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero-texto .subtitulo {
+  font-size: 16px;
+  color: #d0e1ff;
+  margin-bottom: 35px;
+}
+
+.btn-hero {
+  display: inline-block;
+  padding: 16px 36px;
+  font-size: 13px;
+  background-color: #ff5277;
+  color: #ffffff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-shadow: 0px 4px 15px rgba(255, 82, 119, 0.4);
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
+}
+
+.btn-hero:hover {
+  background-color: #e04366;
+  transform: translateY(-2px);
+}
+
+/* Imagem do celular e dos gráficos */
+.caixa-imagem {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Badges e estatísticas */
+.conteudo-badges {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.badge-itens {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  font-size: 12px;
+  color: #c4d9ff;
+  line-height: 1.3;
+}
+
+.badge-img {
+  height: 50px;
+  width: auto;
+  margin-bottom: 12px;
+  object-fit: contain;
+}
+
+.badge-itens-status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 12px;
+  color: #c4d9ff;
+  line-height: 1.3;
+}
+
+.badge-itens-status h2 {
+  font-family: "Playfair Display", "Didot", serif;
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
