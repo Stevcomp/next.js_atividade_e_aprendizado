@@ -1,5 +1,3 @@
-import "./blog.css";
-
 export default function blog() {
   return (
     <main className="conteudo-pagina pagina-blog">

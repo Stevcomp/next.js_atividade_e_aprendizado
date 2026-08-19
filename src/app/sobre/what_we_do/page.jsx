@@ -1,5 +1,3 @@
-import "./what_we_do.css";
-
 export default function what_we_do() {
   return (
     <main className="conteudo-pagina pagina-o-que-fazemos">

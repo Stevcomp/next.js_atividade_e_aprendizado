@@ -158,6 +158,13 @@ body {
   padding: 30px;
   text-align: center;
   transition: all 0.3s ease;
+    border-top: 4px solid #0052ff;
+
+}
+
+.card-item:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .card-item h2 {

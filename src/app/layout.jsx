@@ -55,9 +55,9 @@ export default function RootLayout({ children }) {
           <div className="conteudo-footer">
             <p>© {new Date().getFullYear()} Tier 11. All rights reserved.</p>
             <div className="footer-links">
-              <Link href={""}>Privacy Policy</Link>
-              <Link href={""}>Terms of Service</Link>
-              <Link href={""}>Contact Us</Link>
+              <Link href={"/sobre/privacyPolicy"}>Privacy Policy</Link>
+              <Link href={"/sobre/termsOfService"}>Terms of Service</Link>
+              <Link href={"/sobre/contactUs"}>Contact Us</Link>
             </div>
           </div>
         </footer>

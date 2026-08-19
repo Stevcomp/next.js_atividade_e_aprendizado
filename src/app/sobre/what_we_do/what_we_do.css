@@ -1,9 +1,0 @@
-/* Destaque visual dos cards de serviço */
-.pagina-o-que-fazemos .card-item {
-  border-top: 4px solid #0052ff;
-}
-
-.pagina-o-que-fazemos .card-item:hover {
-  transform: translateY(-8px);
-  background: rgba(255, 255, 255, 0.08);
-}

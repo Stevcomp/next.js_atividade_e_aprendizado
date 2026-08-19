@@ -1,5 +1,3 @@
-import "./podcast.css";
-
 export default function podcast() {
   return (
     <main className="conteudo-pagina pagina-podcast">
