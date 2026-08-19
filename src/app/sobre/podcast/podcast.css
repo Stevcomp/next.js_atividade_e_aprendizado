@@ -1,0 +1,16 @@
+/* Cards de episódio lado a lado, com largura equilibrada */
+.pagina-podcast .card-item {
+  flex: 1 1 260px;
+  border-top: 4px solid #00d2ff;
+}
+
+/* Número do episódio com a mesma fonte serifada usada nas estatísticas da Home */
+.pagina-podcast .card-item h2 {
+  font-family: "Playfair Display", "Didot", serif;
+  font-size: 28px;
+}
+
+.pagina-podcast .card-item:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.08);
+}

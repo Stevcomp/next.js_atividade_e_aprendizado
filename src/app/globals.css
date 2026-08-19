@@ -43,7 +43,12 @@ body {
   letter-spacing: 0.8px;
 }
 
-.btnHeader {
+.setinha {
+  font-size: 10px;
+  margin-left: 3px;
+}
+
+.btn-header {
   padding: 12px 28px;
   font-size: 12px;
   background-color: #ff5277;
@@ -58,118 +63,9 @@ body {
     background-color 0.2s;
 }
 
-.btnHeader:hover {
+.btn-header:hover {
   background-color: #e04366;
   transform: translateY(-2px);
-}
-
-/* Hero container (conteiner principal) */
-.hero-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-.hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-  margin-top: 20px;
-  margin-bottom: 80px;
-}
-
-.hero-txt {
-  flex: 1;
-}
-
-.hero-txt h1 {
-  font-size: 44px;
-  line-height: 1.2;
-  font-weight: 800;
-  margin-bottom: 20px;
-}
-
-.hero-txt .subtitulo {
-  font-size: 16px;
-  color: #d0e1ff;
-  margin-bottom: 35px;
-}
-
-.btnHero {
-  display: inline-block;
-  padding: 16px 36px;
-  font-size: 13px;
-  background-color: #ff5277;
-  color: #ffffff;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 700;
-  letter-spacing: 1px;
-  box-shadow: 0px 4px 15px rgba(255, 82, 119, 0.4);
-  transition:
-    transform 0.2s,
-    background-color 0.2s;
-}
-
-.btnHero:hover {
-  background-color: #e04366;
-  transform: translateY(-2px);
-}
-
-/* Foto do celular e dos gráficos */
-.box-imagem {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.hero-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Bedges e estatísticas */
-.badges-container {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
-  align-items: flex-start;
-  padding-top: 20px;
-}
-
-.badge-itens {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: 12px;
-  color: #c4d9ff;
-  line-height: 1.3;
-}
-
-.badge-img {
-  height: 50px;
-  width: auto;
-  margin-bottom: 12px;
-  object-fit: contain;
-}
-
-.badge-itens-status {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: 12px;
-  color: #c4d9ff;
-  line-height: 1.3;
-}
-
-.badge-itens-status h2 {
-  font-family: "Playfair Display", "Didot", serif;
-  font-size: 32px;
-  color: #ffffff;
-  font-weight: 800;
-  margin-bottom: 5px;
 }
 
 /* Footer */
@@ -177,28 +73,28 @@ body {
   width: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   margin-top: 60px;
-  padding: 30px 80px; 
+  padding: 30px 80px;
 }
 
-.footer-container {
+.conteudo-footer {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 13px;
-  font-weight: 700; 
-  letter-spacing: 0.8px; 
-  color: #ffffff; 
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #ffffff;
 }
 
-.footer-container p {
-  text-transform: uppercase; 
+.conteudo-footer p {
+  text-transform: uppercase;
 }
 
 .footer-links {
   display: flex;
-  gap: 35px; 
+  gap: 35px;
 }
 
 .footer-links a {
@@ -215,20 +111,63 @@ body {
   opacity: 0.8;
 }
 
-/* Responsividade para telas menores 
-@media (max-width: 768px) {
-  .footer {
-    padding: 25px 20px;
-  }
+/* Padrão de página interna (reutilizado por Blog, Podcast, What We Do e Careers) */
+.conteudo-pagina {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
-  .footer-container {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-  }
+.titulo-pagina {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 
-  .footer-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }*/
+.subtitulo-pagina {
+  font-size: 18px;
+  color: #c4d9ff;
+  max-width: 700px;
+  line-height: 1.5;
+  margin-bottom: 45px;
+}
+
+/* Grid de cards (alinha os itens lado a lado e centraliza) */
+.conteudo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.card-item {
+  flex: 1 1 280px;
+  max-width: 340px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.card-item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.card-item p {
+  font-size: 14px;
+  color: #c4d9ff;
+  line-height: 1.5;
+}
