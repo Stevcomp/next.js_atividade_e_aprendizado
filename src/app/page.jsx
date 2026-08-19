@@ -2,13 +2,15 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 import "./home.css";
+import BannerCTA from "@/components/bannerCTA";
 
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export default async function Home() {
 
-  await delay(3500);
+  await sleep(3500);
 
+  // throw new Error ("Simulando um erro catastrófico.");
 
   return (
     <main className="conteudo-hero">
@@ -55,6 +57,9 @@ export default async function Home() {
           <p>Years of Facebook<br />Advertising Experience</p>
         </div>
       </div>
+
+      <BannerCTA/>
+
     </main>
   );
 }
