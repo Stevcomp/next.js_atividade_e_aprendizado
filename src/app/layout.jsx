@@ -2,6 +2,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -24,43 +28,13 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable}`}
     >
       <body>
-        <header className="header">
-          <div className="logo">
-            <Link href="/">
-              <img src="/imagens/tier11.png" alt="tier logo" className="logo-img" />
-            </Link>
-          </div>
 
-          <nav className="menu">
-            <Link href="/sobre/what_we_do" className="link-nav">
-              WHAT WE DO <span className="setinha">▼</span>
-            </Link>
-            <Link href="/sobre/blog" className="link-nav">
-              BLOG
-            </Link>
-            <Link href="/sobre/podcast" className="link-nav">
-              PODCAST
-            </Link>
-            <Link href="/sobre/careers" className="link-nav">
-              CAREERS
-            </Link>
-          </nav>
-
-          <Link href={""} className="btn-header">WORK WITH US</Link>
-        </header>
+        <Header/>
 
         {children}
 
-        <footer className="footer">
-          <div className="conteudo-footer">
-            <p>© {new Date().getFullYear()} Tier 11. All rights reserved.</p>
-            <div className="footer-links">
-              <Link href={"/sobre/privacyPolicy"}>Privacy Policy</Link>
-              <Link href={"/sobre/termsOfService"}>Terms of Service</Link>
-              <Link href={"/sobre/contactUs"}>Contact Us</Link>
-            </div>
-          </div>
-        </footer>
+        <Footer/>
+
       </body>
     </html>
   );
