@@ -158,7 +158,7 @@ body {
   padding: 30px;
   text-align: center;
   transition: all 0.3s ease;
-    border-top: 4px solid #0052ff;
+  border-top: 4px solid #0052ff;
 
 }
 
@@ -177,4 +177,24 @@ body {
   font-size: 14px;
   color: #c4d9ff;
   line-height: 1.5;
+}
+
+/* TUDO (not found error e etc) */
+
+.container-notfound {
+  width: 70vw;
+  margin: auto;
+}
+
+.flex-notfound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-direction: column;
+}
+
+.face {
+  width: 300px;
+  height: auto;
 }

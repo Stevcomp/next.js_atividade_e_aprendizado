@@ -1,10 +1,15 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
-
 import "./home.css";
 
-export default function Home() {
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+export default async function Home() {
+
+  await delay(3500);
+
+
   return (
     <main className="conteudo-hero">
       <div className="hero-linha">

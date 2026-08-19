@@ -1,13 +1,15 @@
-import FigureNotFound from "@/components/figureNotFound";
+"use client";
 
-export default function NotFound(){
+import FigureError from "@/components/figureError";
+
+export default function Error(){
     return(
         <>
             <div className="container-notfound">
                 <div className="flex-notfound">
                     <h2>ERRO 404</h2>
-                    <p>Página não encontrada.</p>
-                    <FigureNotFound/>
+                    <p>Tenta denovo fiot</p>
+                    <FigureError/>
                 </div>
             </div>
         </>
